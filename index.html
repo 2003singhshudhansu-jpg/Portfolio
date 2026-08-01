@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudhanshu Singh | Data Analyst Portfolio</title>
+    <meta name="description" content="Portfolio of Sudhanshu Singh - Data Analyst & B.Tech CSE student specializing in SQL, Python, Power BI, EDA, and Data Visualization.">
+    <meta name="keywords" content="Sudhanshu Singh, Data Analyst, Portfolio, Python, SQL, Power BI, Pandas, Tableau, Machine Learning, Noida">
+    <meta property="og:title" content="Sudhanshu Singh | Data Analyst Portfolio">
+    <meta property="og:description" content="Turning raw complex data into actionable business insight using SQL, Python, and Power BI.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Chart.js for Live Interactive Data Visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Background Glow Effects -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand">
+                <span class="brand-accent">&lt;</span>Sudhanshu<span class="brand-accent"> /&gt;</span>
+                <span class="brand-role">Data Analyst</span>
+            </a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="btn btn-outline btn-sm" id="open-resume-modal">
+                    <i class="fa-solid fa-file-pdf"></i> Resume
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-tag hero-badge">
+                        <span class="pulse-dot"></span> Available for Data Analyst Roles
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Sudhanshu Singh</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Data Analyst & B.Tech CSE '26
+                    </h2>
+                    
+                    <p class="hero-description">
+                        Transforming raw, complex datasets into strategic, actionable business insights using 
+                        <strong>SQL</strong>, <strong>Python</strong>, and <strong>Power BI</strong>.
+                    </p>
+
+                    <div class="hero-location">
+                        <i class="fa-solid fa-location-dot"></i> Noida, India &nbsp;|&nbsp; 
+                        <i class="fa-solid fa-graduation-cap"></i> Babu Banarasi Das NIIT
+                    </div>
+
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-chart-line"></i> View Flagship Projects
+                        </a>
+                        <button class="btn btn-outline" id="hero-resume-btn">
+                            <i class="fa-solid fa-download"></i> Resume PDF
+                        </button>
+                        <a href="#contact" class="btn btn-glass">
+                            <i class="fa-regular fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/2003singhshudhansu-jpg" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/shudhanshu-singh" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:2003singhshudhanshu@gmail.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:8528460538" aria-label="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="photo-frame">
+                        <div class="photo-border-glow"></div>
+                        <img src="assets/sudhanshu_singh.jpg" alt="Sudhanshu Singh - Data Analyst" class="hero-photo">
+                        
+                        <!-- Floating Glass Badges -->
+                        <div class="floating-badge badge-1">
+                            <i class="fa-solid fa-database text-cyan"></i>
+                            <div>
+                                <span class="badge-title">SQL & Python</span>
+                                <span class="badge-sub">Data Cleaning & ETL</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-2">
+                            <i class="fa-solid fa-chart-pie text-emerald"></i>
+                            <div>
+                                <span class="badge-title">Power BI & DAX</span>
+                                <span class="badge-sub">Interactive Dashboards</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Stats Section -->
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">ABOUT ME</span>
+                    <h2 class="section-title">Driven by Data, Focused on <span class="text-gradient">Impact</span></h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text-card glass-card">
+                        <h3 class="card-heading"><i class="fa-solid fa-user-gear text-cyan"></i> Professional Profile</h3>
+                        <p>
+                            I am a final-year <strong>B.Tech Computer Science & Engineering</strong> student with a deep passion for 
+                            data analytics, business intelligence, and exploratory data analysis. Skilled in translating messy, unorganized data 
+                            into clean, normalized structures and visual executive reports.
+                        </p>
+                        <p>
+                            With hands-on experience performing EDA across 30+ HR attributes, modeling normalized e-commerce databases, and analyzing 
+                            8,800+ Netflix records, I specialize in uncovering key trends, optimizing retained revenue, and enabling business stakeholders to make data-backed decisions.
+                        </p>
+                        
+                        <div class="highlights-list">
+                            <div class="highlight-item"><i class="fa-solid fa-check text-cyan"></i> Advanced SQL & Relational Schema Normalization</div>
+                            <div class="highlight-item"><i class="fa-solid fa-check text-cyan"></i> Python Data Manipulation (Pandas, NumPy)</div>
+                            <div class="highlight-item"><i class="fa-solid fa-check text-cyan"></i> Dynamic Power BI Dashboarding & DAX Modeling</div>
+                            <div class="highlight-item"><i class="fa-solid fa-check text-cyan"></i> Statistical Analysis & Machine Learning Fundamentals</div>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="fa-solid fa-diagram-project text-cyan"></i></div>
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">Flagship Analytics Projects</div>
+                            <div class="stat-sub">End-to-End Execution</div>
+                        </div>
+
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><div class="stat-icon-inner"><i class="fa-solid fa-table-cells text-emerald"></i></div></div>
+                            <div class="stat-number" data-target="10770">0</div>
+                            <span class="stat-plus">+</span>
+                            <div class="stat-label">Data Records Cleaned & Analyzed</div>
+                            <div class="stat-sub">HR, E-Commerce, Netflix</div>
+                        </div>
+
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="fa-solid fa-chart-column text-amber"></i></div>
+                            <div class="stat-number" data-target="30">0</div>
+                            <span class="stat-plus">+</span>
+                            <div class="stat-label">HR Attributes Analyzed</div>
+                            <div class="stat-sub">Employee Attrition Drivers</div>
+                        </div>
+
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="fa-solid fa-award text-purple"></i></div>
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">Industry Certifications</div>
+                            <div class="stat-sub">Deloitte, IBM & Ducat</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical & Soft Skills Section -->
+        <section class="skills section-padding" id="skills">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">MY TOOLKIT</span>
+                    <h2 class="section-title">Technical & Analytical <span class="text-gradient">Capabilities</span></h2>
+                    <p class="section-desc">Organized by domain expertise and hands-on tool proficiency.</p>
+                </div>
+
+                <!-- Category Tabs -->
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-tab="all">All Skills</button>
+                    <button class="tab-btn" data-tab="analysis">Data Analysis & ETL</button>
+                    <button class="tab-btn" data-tab="viz">Visualization & BI</button>
+                    <button class="tab-btn" data-tab="prog">Languages & ML</button>
+                    <button class="tab-btn" data-tab="tools">Databases & Tools</button>
+                </div>
+
+                <div class="skills-grid" id="skills-grid">
+                    <!-- Languages & Libraries -->
+                    <div class="skill-card glass-card" data-category="prog">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-code text-cyan"></i>
+                            <h3>Languages & Libraries</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Python</span><span>90%</span></div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>SQL (MySQL, T-SQL)</span><span>92%</span></div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 92%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Pandas & NumPy</span><span>88%</span></div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Matplotlib & Seaborn</span><span>85%</span></div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Analysis & Engineering -->
+                    <div class="skill-card glass-card" data-category="analysis">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-magnifying-glass-chart text-emerald"></i>
+                            <h3>Data Analysis & ETL</h3>
+                        </div>
+                        <div class="skill-pills">
+                            <span class="pill">Exploratory Data Analysis (EDA)</span>
+                            <span class="pill">Statistical Analysis</span>
+                            <span class="pill">Trend Analysis</span>
+                            <span class="pill">Data Cleaning & Wrangling</span>
+                            <span class="pill">ETL Pipelines</span>
+                            <span class="pill">Data Validation</span>
+                            <span class="pill">Data Transformation</span>
+                            <span class="pill">Schema Normalization</span>
+                        </div>
+                    </div>
+
+                    <!-- Visualization & Reporting -->
+                    <div class="skill-card glass-card" data-category="viz">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-chart-pie text-amber"></i>
+                            <h3>Visualization & Reporting</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Power BI (DAX, Data Modeling)</span><span>90%</span></div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Tableau</span><span>80%</span></div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>KPI Reporting & Dashboards</span><span>92%</span></div>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 92%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning -->
+                    <div class="skill-card glass-card" data-category="prog">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-brain text-purple"></i>
+                            <h3>Machine Learning Fundamentals</h3>
+                        </div>
+                        <div class="skill-pills">
+                            <span class="pill">Scikit-learn</span>
+                            <span class="pill">Logistic Regression</span>
+                            <span class="pill">Decision Trees</span>
+                            <span class="pill">Random Forest</span>
+                            <span class="pill">Feature Engineering</span>
+                            <span class="pill">Classification</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Tools -->
+                    <div class="skill-card glass-card" data-category="tools">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-toolbox text-cyan"></i>
+                            <h3>Databases & Software</h3>
+                        </div>
+                        <div class="skill-pills">
+                            <span class="pill"><i class="fa-solid fa-database"></i> MySQL</span>
+                            <span class="pill"><i class="fa-solid fa-file-excel"></i> MS Excel (PivotTables, XLOOKUP, VLOOKUP, INDEX/MATCH, Macros)</span>
+                            <span class="pill"><i class="fa-solid fa-book"></i> Jupyter Notebook</span>
+                            <span class="pill"><i class="fa-solid fa-cloud"></i> Google Colab</span>
+                            <span class="pill"><i class="fa-brands fa-github"></i> GitHub</span>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-card glass-card" data-category="analysis">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-lightbulb text-emerald"></i>
+                            <h3>Soft Skills & Business Acumen</h3>
+                        </div>
+                        <div class="skill-pills">
+                            <span class="pill highlight">Analytical Thinking</span>
+                            <span class="pill highlight">Problem-Solving</span>
+                            <span class="pill highlight">Cross-Functional Collaboration</span>
+                            <span class="pill highlight">Attention to Detail</span>
+                            <span class="pill highlight">Communication & Reporting</span>
+                            <span class="pill highlight">Data Storytelling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flagship Projects Section -->
+        <section class="projects section-padding" id="projects">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">PORTFOLIO WORK</span>
+                    <h2 class="section-title">Flagship Data <span class="text-gradient">Projects</span></h2>
+                    <p class="section-desc">Interactive case studies with live data charts, impact metrics, and code repositories.</p>
+                </div>
+
+                <div class="projects-wrapper">
+                    <!-- Project 1: Employee Attrition Analysis -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-badge text-cyan">HR Analytics & Power BI</div>
+                            <h3 class="project-title">Employee Attrition Analysis</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag"><i class="fa-solid fa-database"></i> SQL</span>
+                                <span class="tech-tag"><i class="fa-brands fa-python"></i> Python</span>
+                                <span class="tech-tag"><i class="fa-solid fa-chart-column"></i> Power BI</span>
+                                <span class="tech-tag">DAX</span>
+                            </div>
+                        </div>
+
+                        <div class="project-body-grid">
+                            <div class="project-info">
+                                <p class="project-summary">
+                                    Comprehensive EDA and interactive BI dashboard analyzing <strong>1,470 employee records</strong> 
+                                    across <strong>30+ HR attributes</strong> to pinpoint key attrition drivers and support enterprise retention strategy.
+                                </p>
+                                <ul class="impact-list">
+                                    <li><i class="fa-solid fa-angles-right text-cyan"></i> <strong>1,470 Records & 30+ HR Attributes:</strong> Evaluated department, job role, monthly income, overtime, and job satisfaction metrics.</li>
+                                    <li><i class="fa-solid fa-angles-right text-cyan"></i> <strong>Power BI Dashboard with 7 KPI Cards:</strong> Formulated custom DAX measures, dynamic slicers, and 10+ visual charts.</li>
+                                    <li><i class="fa-solid fa-angles-right text-cyan"></i> <strong>Strategic HR Insights:</strong> Uncovered that high overtime and low job satisfaction were the #1 drivers of staff turnover.</li>
+                                </ul>
+
+                                <div class="project-actions">
+                                    <a href="https://github.com/2003singhshudhansu-jpg" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                                        <i class="fa-brands fa-github"></i> GitHub Code
+                                    </a>
+                                    <button class="btn btn-outline btn-sm open-project-modal" data-project="attrition">
+                                        <i class="fa-solid fa-magnifying-glass"></i> Deep Dive Case Study
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Live Chart Simulator -->
+                            <div class="project-chart-container">
+                                <div class="chart-header">
+                                    <span class="chart-title"><i class="fa-solid fa-chart-bar text-cyan"></i> Live Chart: Attrition by Department</span>
+                                    <span class="chart-tag">Interactive</span>
+                                </div>
+                                <div class="chart-canvas-wrapper">
+                                    <canvas id="attritionChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: E-Commerce Sales Performance Analysis -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-badge text-emerald">SQL & Relational Databases</div>
+                            <h3 class="project-title">E-Commerce Sales Performance Analysis</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag"><i class="fa-solid fa-database"></i> SQL</span>
+                                <span class="tech-tag"><i class="fa-solid fa-server"></i> MySQL</span>
+                                <span class="tech-tag">DB Normalization</span>
+                                <span class="tech-tag">Data Quality Audit</span>
+                            </div>
+                        </div>
+
+                        <div class="project-body-grid">
+                            <div class="project-info">
+                                <p class="project-summary">
+                                    Designed a normalized MySQL relational database connecting <strong>3 integrated datasets (500+ records)</strong> 
+                                    to analyze sales velocity, profitability, and customer purchase behaviors.
+                                </p>
+                                <ul class="impact-list">
+                                    <li><i class="fa-solid fa-angles-right text-emerald"></i> <strong>Schema Normalization:</strong> Built 3NF relational schemas resolving redudancy across products, transactions, and customers.</li>
+                                    <li><i class="fa-solid fa-angles-right text-emerald"></i> <strong>Data Quality Auditing:</strong> Detected null values, duplicate transaction IDs, and foreign key mismatches.</li>
+                                    <li><i class="fa-solid fa-angles-right text-emerald"></i> <strong>SQL Views & KPI Reporting:</strong> Created complex JOINs, CTEs, and aggregated SQL views for executive reporting.</li>
+                                </ul>
+
+                                <div class="project-actions">
+                                    <a href="https://github.com/2003singhshudhansu-jpg" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                                        <i class="fa-brands fa-github"></i> GitHub Code
+                                    </a>
+                                    <button class="btn btn-outline btn-sm open-project-modal" data-project="ecommerce">
+                                        <i class="fa-solid fa-code"></i> View SQL Queries & Schema
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Live Chart Simulator -->
+                            <div class="project-chart-container">
+                                <div class="chart-header">
+                                    <span class="chart-title"><i class="fa-solid fa-chart-line text-emerald"></i> Live Chart: Category Revenue & Profit</span>
+                                    <span class="chart-tag">Interactive</span>
+                                </div>
+                                <div class="chart-canvas-wrapper">
+                                    <canvas id="salesChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Netflix Data Analysis -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-badge text-purple">Python EDA & Content Strategy</div>
+                            <h3 class="project-title">Netflix Content & Growth Analysis</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag"><i class="fa-brands fa-python"></i> Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">Matplotlib & Seaborn</span>
+                                <span class="tech-tag">Jupyter</span>
+                                <span class="tech-tag">Power BI</span>
+                            </div>
+                        </div>
+
+                        <div class="project-body-grid">
+                            <div class="project-info">
+                                <p class="project-summary">
+                                    Cleaned and processed <strong>8,800+ Netflix movies and TV shows</strong> to map content growth trends, 
+                                    genre popularity, and country-wise release patterns.
+                                </p>
+                                <ul class="impact-list">
+                                    <li><i class="fa-solid fa-angles-right text-purple"></i> <strong>8,800+ Records Cleaned:</strong> Imputed 1,200+ missing values in directors, cast, and country columns using Pandas.</li>
+                                    <li><i class="fa-solid fa-angles-right text-purple"></i> <strong>68% Movies vs 32% TV Shows:</strong> Revealed content distribution ratio and mapped 2018–2020 exponential addition trends.</li>
+                                    <li><i class="fa-solid fa-angles-right text-purple"></i> <strong>Stakeholder Reporting:</strong> Translated visual findings into digestible dashboards for content acquisition teams.</li>
+                                </ul>
+
+                                <div class="project-actions">
+                                    <a href="https://github.com/2003singhshudhansu-jpg" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                                        <i class="fa-brands fa-github"></i> GitHub Code
+                                    </a>
+                                    <button class="btn btn-outline btn-sm open-project-modal" data-project="netflix">
+                                        <i class="fa-solid fa-chart-pie"></i> View Insights & Notebook
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Live Chart Simulator -->
+                            <div class="project-chart-container">
+                                <div class="chart-header">
+                                    <span class="chart-title"><i class="fa-solid fa-chart-pie text-purple"></i> Live Chart: Movies vs TV Shows Split</span>
+                                    <span class="chart-tag">Interactive</span>
+                                </div>
+                                <div class="chart-canvas-wrapper">
+                                    <canvas id="netflixChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section class="education section-padding" id="education">
+            <div class="container">
+                <div class="grid-2-col">
+                    <!-- Education Column -->
+                    <div class="education-block">
+                        <div class="section-header">
+                            <span class="section-subtitle">ACADEMICS</span>
+                            <h2 class="section-title">Education <span class="text-gradient">Journey</span></h2>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeline-item glass-card">
+                                <div class="timeline-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2022 - 2026</span>
+                                    <h3 class="degree-title">Bachelor of Technology (B.Tech)</h3>
+                                    <h4 class="field-title">Computer Science & Engineering</h4>
+                                    <p class="institution">Babu Banarasi Das Northern India Institute of Technology, Lucknow</p>
+                                    <div class="academic-highlights">
+                                        <span><i class="fa-solid fa-check text-cyan"></i> Core Focus: Data Structures, DBMS, SQL, Python, Statistics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Column -->
+                    <div class="certifications-block">
+                        <div class="section-header">
+                            <span class="section-subtitle">VERIFIED CREDENTIALS</span>
+                            <h2 class="section-title">Professional <span class="text-gradient">Certifications</span></h2>
+                        </div>
+
+                        <div class="cert-cards">
+                            <div class="cert-card glass-card">
+                                <div class="cert-badge-icon"><i class="fa-solid fa-certificate text-cyan"></i></div>
+                                <div class="cert-details">
+                                    <h4>Data Analytics Job Simulation</h4>
+                                    <span class="cert-issuer">Deloitte (via Forage)</span>
+                                    <span class="cert-date"><i class="fa-regular fa-calendar"></i> March 2026</span>
+                                </div>
+                            </div>
+
+                            <div class="cert-card glass-card">
+                                <div class="cert-badge-icon"><i class="fa-solid fa-certificate text-emerald"></i></div>
+                                <div class="cert-details">
+                                    <h4>Data Science-AI & DSA Training</h4>
+                                    <span class="cert-issuer">ShapeMySkills by Ducat, Noida</span>
+                                    <span class="cert-date"><i class="fa-regular fa-calendar"></i> August 2025</span>
+                                </div>
+                            </div>
+
+                            <div class="cert-card glass-card">
+                                <div class="cert-badge-icon"><i class="fa-solid fa-certificate text-purple"></i></div>
+                                <div class="cert-details">
+                                    <h4>Introduction to Artificial Intelligence (AI)</h4>
+                                    <span class="cert-issuer">IBM (via Coursera)</span>
+                                    <span class="cert-date"><i class="fa-regular fa-calendar"></i> March 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership & Extracurricular Section -->
+                <div class="leadership-section margin-top-lg">
+                    <div class="section-header center">
+                        <span class="section-subtitle">LEADERSHIP & INITIATIVES</span>
+                        <h2 class="section-title">Extracurricular & <span class="text-gradient">Responsibility</span></h2>
+                    </div>
+
+                    <div class="leadership-grid">
+                        <div class="leadership-card glass-card">
+                            <div class="leadership-icon"><i class="fa-solid fa-user-shield text-cyan"></i></div>
+                            <h3>Coordinator – Discipline Team</h3>
+                            <span class="org-name">Babu Banarasi Das NIIT</span>
+                            <ul>
+                                <li>Coordinated academic and technical events at the institute level.</li>
+                                <li>Assisted faculty and administration in smooth event execution.</li>
+                            </ul>
+                        </div>
+
+                        <div class="leadership-card glass-card">
+                            <div class="leadership-icon"><i class="fa-solid fa-hand-holding-heart text-emerald"></i></div>
+                            <h3>Volunteer</h3>
+                            <span class="org-name">Zariya: The Way to Happiness</span>
+                            <ul>
+                                <li>Supported community wellness and cultural events.</li>
+                                <li>Assisted participants and managed on-ground event operations.</li>
+                            </ul>
+                        </div>
+
+                        <div class="leadership-card glass-card">
+                            <div class="leadership-icon"><i class="fa-solid fa-feather text-amber"></i></div>
+                            <h3>Literary Coordinator – UTKARSH 2026</h3>
+                            <span class="org-name">BBD Educational Group</span>
+                            <ul>
+                                <li>Coordinated literary events and competitions during the annual fest.</li>
+                                <li>Supervised student teams and stage management operations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section-padding" id="contact">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">GET IN TOUCH</span>
+                    <h2 class="section-title">Let's Build Something <span class="text-gradient">Data-Driven</span></h2>
+                    <p class="section-desc">Open for Data Analyst full-time roles, internships, and data projects.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-wrapper">
+                        <div class="contact-card glass-card">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope text-cyan"></i></div>
+                                <div>
+                                    <h4>Email Address</h4>
+                                    <a href="mailto:2003singhshudhanshu@gmail.com">2003singhshudhanshu@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-phone text-emerald"></i></div>
+                                <div>
+                                    <h4>Phone Number</h4>
+                                    <a href="tel:8528460538">+91 8528460538</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot text-amber"></i></div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Noida, Uttar Pradesh, India</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-brands fa-linkedin text-purple"></i></div>
+                                <div>
+                                    <h4>LinkedIn Profile</h4>
+                                    <a href="https://linkedin.com/in/shudhanshu-singh" target="_blank" rel="noopener">linkedin.com/in/shudhanshu-singh</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume-cta-card glass-card">
+                            <i class="fa-solid fa-file-arrow-down cta-icon text-cyan"></i>
+                            <div>
+                                <h3>Need a copy of my resume?</h3>
+                                <p>Download the ATS-friendly PDF directly or view it online.</p>
+                            </div>
+                            <button class="btn btn-primary btn-sm" id="contact-resume-btn">
+                                <i class="fa-solid fa-download"></i> Download Resume
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-card glass-card">
+                        <h3 class="form-title"><i class="fa-regular fa-paper-plane text-cyan"></i> Send a Direct Message</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required placeholder="e.g. John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" required placeholder="e.g. john@company.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" required placeholder="Data Analyst Opportunity / Inquiry">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" required placeholder="Hi Sudhanshu, I reviewed your portfolio and would like to discuss..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Sudhanshu Singh. Built with HTML, CSS, JavaScript & Chart.js.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/2003singhshudhansu-jpg" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/shudhanshu-singh" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:2003singhshudhanshu@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <a href="#hero" class="back-to-top" aria-label="Back to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Interactive Resume Modal -->
+    <div class="modal" id="resume-modal" aria-hidden="true">
+        <div class="modal-overlay" id="resume-modal-overlay"></div>
+        <div class="modal-container glass-card resume-modal-box">
+            <button class="modal-close" id="close-resume-modal">&times;</button>
+            <div class="resume-modal-header">
+                <h2><i class="fa-solid fa-file-pdf text-cyan"></i> Sudhanshu Singh - Resume</h2>
+                <div class="modal-actions">
+                    <button class="btn btn-primary btn-sm" onclick="window.print()">
+                        <i class="fa-solid fa-print"></i> Print / Save PDF
+                    </button>
+                </div>
+            </div>
+            <div class="resume-preview-body">
+                <div class="resume-sheet">
+                    <div class="resume-header">
+                        <h1>SUDHANSHU SINGH</h1>
+                        <p class="resume-role">Data Analyst</p>
+                        <p class="resume-contacts">
+                            Noida, India | 8528460538 | 2003singhshudhanshu@gmail.com | 
+                            github.com/2003singhshudhansu-jpg | linkedin.com/in/shudhanshu-singh
+                        </p>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>PROFESSIONAL SUMMARY</h3>
+                        <p>B.Tech Computer Science student with a strong foundation in data analysis, SQL, Python, Excel, and Power BI. Skilled in cleaning, analyzing, and visualizing data to generate actionable insights and support data-driven decision-making. Strong analytical and problem-solving abilities with hands-on project experience and a passion for leveraging data to improve business performance. Seeking a Data Analyst opportunity to apply technical skills and grow in the field of analytics.</p>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>TECHNICAL SKILLS</h3>
+                        <ul>
+                            <li><strong>Languages & Libraries:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn, SQL</li>
+                            <li><strong>Data Analysis:</strong> EDA, Statistical Analysis, Trend Analysis, Data Cleaning, ETL, Data Validation, Data Transformation</li>
+                            <li><strong>Visualization & Reporting:</strong> Power BI (DAX, Data Modeling, Dashboards), Tableau, KPI Reporting, Data Storytelling, Business Reporting</li>
+                            <li><strong>Machine Learning:</strong> Scikit-learn, Logistic Regression, Decision Tree, Random Forest, Feature Engineering, Classification</li>
+                            <li><strong>Databases & Tools:</strong> MySQL, Microsoft Excel (PivotTables, XLOOKUP, VLOOKUP, INDEX/MATCH, Macros), Jupyter Notebook, Google Colab, GitHub</li>
+                            <li><strong>Soft Skills:</strong> Analytical Thinking, Problem-Solving, Cross-Functional Collaboration, Attention to Detail, Communication & Reporting</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>PROJECTS</h3>
+                        <div class="resume-project">
+                            <h4>Employee Attrition Analysis (SQL, Python, Power BI)</h4>
+                            <ul>
+                                <li>Analyzed 1,470 employee records using SQL and Python, performing EDA across 30+ HR attributes (department, job role, salary, overtime, job satisfaction) to identify attrition patterns.</li>
+                                <li>Built an interactive Power BI dashboard with 7 KPI cards, 10+ visualizations, and dynamic slicers using DAX.</li>
+                                <li>Delivered data-driven insights identifying key attrition drivers, supporting HR decision-making and retention strategies.</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-project">
+                            <h4>E-Commerce Sales Performance Analysis (SQL, MySQL)</h4>
+                            <ul>
+                                <li>Designed a normalized MySQL relational database integrating 3 datasets (500+ sales and transaction records) and wrote complex queries to analyze sales, profit, customers, and product categories.</li>
+                                <li>Conducted data quality audits to detect null values, duplicates, and foreign key inconsistencies, ensuring full data integrity across the database.</li>
+                                <li>Created SQL views and KPI-based analytical reports to surface actionable business insights for decision-making.</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-project">
+                            <h4>Netflix Data Analysis (Python, Pandas, Matplotlib, Seaborn, Jupyter Notebook, Power BI)</h4>
+                            <ul>
+                                <li>Cleaned and standardized 8,800+ Netflix records, resolving 1,200+ null values and normalizing categorical fields.</li>
+                                <li>Uncovered that Movies made up 68% of the library vs. TV Shows, and mapped content growth trends from 2018–2020.</li>
+                                <li>Produced EDA reports and visual dashboards translating content strategy insights for non-technical stakeholders.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>EDUCATION</h3>
+                        <p><strong>Bachelor of Technology (B.Tech) – Computer Science & Engineering</strong> (2022 - 2026)<br>
+                        Babu Banarasi Das Northern India Institute of Technology, Lucknow</p>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>CERTIFICATIONS</h3>
+                        <ul>
+                            <li>Data Analytics Job Simulation – Deloitte (via Forage) | March 2026</li>
+                            <li>Data Science-AI & DSA Training – ShapeMySkills by Ducat, Noida | August 2025</li>
+                            <li>Introduction to Artificial Intelligence (AI) – IBM (via Coursera) | March 2026</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-section">
+                        <h3>LEADERSHIP & EXTRACURRICULAR ACTIVITIES</h3>
+                        <p><strong>Coordinator – Discipline Team</strong> | Babu Banarasi Das Northern India Institute of Technology<br>
+                        • Coordinated academic and technical events; assisted faculty and administration.</p>
+                        <p><strong>Volunteer – Zariya: The Way to Happiness</strong><br>
+                        • Supported wellness and cultural events; managed operations.</p>
+                        <p><strong>Literary Coordinator – UTKARSH 2026 Annual Fest</strong> | BBD Educational Group<br>
+                        • Coordinated literary events and supported fest execution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Details Modal -->
+    <div class="modal" id="project-modal" aria-hidden="true">
+        <div class="modal-overlay" id="project-modal-overlay"></div>
+        <div class="modal-container glass-card project-modal-box">
+            <button class="modal-close" id="close-project-modal">&times;</button>
+            <div id="project-modal-content">
+                <!-- Content dynamically populated by script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Message sent successfully!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
